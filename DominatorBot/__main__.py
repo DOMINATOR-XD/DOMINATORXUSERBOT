@@ -45,7 +45,7 @@ async def plug_load(path):
                 load_module(shortname.replace(".py", ""))      
 
 if LOAD_ASSISTANT == True:
-    path = "DominatorBot/assistant/*.py"
+    path = "DominatorBot/plugins/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
